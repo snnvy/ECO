@@ -186,7 +186,7 @@ h1 {
 }
 
 .section__one-title {
-    background: url('Group\ 908.png') 100% / 100% 457px no-repeat;
+    background: url('Group\ 908.png') 100% / cover no-repeat;
     height: 457px;
     z-index: 4;
     margin-top: -100px;
