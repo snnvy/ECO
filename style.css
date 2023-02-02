@@ -20,6 +20,9 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
+body,html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #0E121B;
     background-image: url('Elements.png');
@@ -27,6 +30,7 @@ body{
     background-size: cover;
     width:100vw;
     overflow-x: hidden;
+   
 }
 a{
     display: block;
@@ -90,6 +94,7 @@ header{
 .menu__link:hover::before{
     width: 100%;
 }
+
 .gradbutton{
     background: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
     border-radius: 50px;
@@ -166,7 +171,7 @@ h1{
     max-width: 100%;
 }
 .section__one-title{
-    background: url('Group\ 908.png') 100%  / 100% 457px no-repeat;
+    background: url(Group\ 908.png) center / 1200px 457px no-repeat;
     height: 457px;
     z-index: 4;
     margin-top: -100px;
@@ -233,7 +238,7 @@ h1{
     margin: 0 150px;
 }
 .section__three{
-    margin:0 83px 120px 150px;
+    margin:0 150px 120px 150px;
 }
 .section__three-title{
     font-family: 'Bebas Neue', cursive;
@@ -387,6 +392,11 @@ h1{
 .section__five-card-img{
     width: 100%;
     margin-bottom: 32px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.section__five-card-img:hover{
+    transform: scale(1.02);
 }
 .section__five-card-data{
     display: flex;
@@ -426,9 +436,16 @@ h1{
     border-radius: 30px;
     line-height: 19px;
     color: #FFFFFF;
+    transition: 0.15s;
 
 }
+.section__five-card-button:hover{
+    background-color: rgba(125, 121, 121, 0.2);
+    box-shadow: 0 0.2em 0.2em -0.15em ;
+    transform: translateY(0.05em);
+}
 .section__five-card-button img{
+    margin-top: 3px;
     margin-left: 8px;
     height: 14px;
     width: 14px;
@@ -594,6 +611,12 @@ h1{
     }
 }
 @media only screen and (min-width : 100px) and (max-width : 1000px) {
+    .menu__link::before{
+        display: none;
+    }
+    .menu__link-button{
+        display: block;
+    }
     .openbtn{
         color: #fff;
         background: none;
@@ -745,7 +768,7 @@ h1{
         display: none;
     }
     .section__three{
-        margin: 0 auto 120px auto;
+        margin: 0 auto 70px auto;
     }
     .section__two-card:nth-child(1){
         width: 95%;
@@ -762,7 +785,7 @@ h1{
         margin-bottom: 44px;
     }
     .section__three-card-dots{
-        display: block;
+        display: none;
     }
     .section__four{
         margin-bottom: 80px;
